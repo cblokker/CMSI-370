@@ -168,11 +168,14 @@ body {
 
 a {
   color: #dddddd;
+  font-family: "Helvetica Neue";
+  font-weight: normal;
   text-decoration: none;
 }
 
 a:hover {
   color: #dddddd;
+  font-family: "Helvetica Neue";
   text-decoration: underline;
 }
 
@@ -279,6 +282,10 @@ a:hover {
   width: 60px;
 }
 
+.span05 {
+  width: 40px;
+}
+
 .offset12 {
   margin-left: 980px;
 }
@@ -327,6 +334,10 @@ a:hover {
   margin-left: 100px;
 }
 
+.offsetDropdown {
+  margin-left: 40px;
+}
+
 .offset075 {
   margin-left: 10px;
   margin-top: 5px;
@@ -348,6 +359,17 @@ a:hover {
   margin-left: 4px;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.offsetFbThumbnail {
+  margin-left: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.offsetFbName {
+  margin-left: 10px;
+  margin-top: 5px;
 }
 
 .row-fluid {

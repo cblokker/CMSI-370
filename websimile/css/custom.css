@@ -1,0 +1,17 @@
+.boxout {
+  border-width: 1px;
+  border-color: gray;
+  padding: 20px;
+  border-bottom: 1px solid #444444;
+}
+
+.gradient {
+  background-image: -moz-linear-gradient(top, #EEE, #AAA);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #EEE), color-stop(1, #AAA));
+}
+
+.sidebarFont {
+	color: #000000;
+	font-size: 12px;
+	
+}

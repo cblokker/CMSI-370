@@ -323,6 +323,11 @@ a:hover {
   margin-left: 100px;
 }
 
+.offset05 {
+  margin-left: 8px;
+  margin-top: 5px;
+}
+
 .row-fluid {
   width: 100%;
   *zoom: 1;
@@ -3023,6 +3028,39 @@ button.close {
 .btn {
   display: inline-block;
   *display: inline;
+  padding: 0px 10px;
+  margin-bottom: 0;
+  *margin-left: 10px;
+  font-size: 12px;
+/*  line-height: 20px;
+  *line-height: 20px;*/
+  color: #eeeeee;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #454545;
+  *background-color: #363636;
+  background-image: #111111
+  background-repeat: repeat-x;
+  /*border: 1px solid #bbbbbb;
+  *border: 0;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-bottom-color: #a2a2a2;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+  *zoom: 1;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);*/
+}
+
+.btn-custom {
+  display: inline-block;
+  *display: inline;
   padding: 4px 14px;
   margin-bottom: 0;
   *margin-left: .3em;
@@ -3056,6 +3094,7 @@ button.close {
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
      -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
           box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+
 }
 
 .btn:hover,
@@ -3078,10 +3117,10 @@ button.close {
 }
 
 .btn:hover {
-  color: #333333;
+  color: #dddddd;
   text-decoration: none;
-  background-color: #e6e6e6;
-  *background-color: #d9d9d9;
+  background-color: #363636;
+  *background-color: #898989;
   /* Buttons in IE7 don't get borders, so darken on hover */
 
   background-position: 0 -15px;
@@ -3099,9 +3138,10 @@ button.close {
 
 .btn.active,
 .btn:active {
-  background-color: #e6e6e6;
+  background-color: #363636;
   background-color: #d9d9d9 \9;
   background-image: none;
+  color: #777777;
   outline: 0;
   -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
      -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -3179,8 +3219,7 @@ input[type="button"].btn-block {
 }
 
 .btn {
-  border-color: #c5c5c5;
-  border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
 }
 
 .btn-primary {
@@ -3751,7 +3790,7 @@ input[type="submit"].btn.btn-mini {
 
 .nav {
   margin-bottom: 20px;
-  margin-left: 0;
+  margin-left: 5px;
   list-style: none;
 }
 
@@ -3761,7 +3800,7 @@ input[type="submit"].btn.btn-mini {
 
 .nav > li > a:hover {
   text-decoration: none;
-  background-color: #eeeeee;
+  background-color: #888888;
 }
 
 .nav > .pull-right {
@@ -3770,12 +3809,11 @@ input[type="submit"].btn.btn-mini {
 
 .nav-header {
   display: block;
-  padding: 3px 15px;
-  font-size: 11px;
-  font-weight: bold;
+  padding: 3px 5px;
+  font-size: 10px;
   line-height: 20px;
-  color: #999999;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #AAAAAA;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
   text-transform: uppercase;
 }
 
@@ -3784,7 +3822,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .nav-list {
-  padding-right: 15px;
+  padding-right:15px;
   padding-left: 15px;
   margin-bottom: 0;
 }
@@ -3793,7 +3831,7 @@ input[type="submit"].btn.btn-mini {
 .nav-list .nav-header {
   margin-right: -15px;
   margin-left: -15px;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
 }
 
 .nav-list > li > a {
@@ -3802,9 +3840,10 @@ input[type="submit"].btn.btn-mini {
 
 .nav-list > .active > a,
 .nav-list > .active > a:hover {
-  color: #ffffff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
-  background-color: #0088cc;
+  color: #555555;
+  font-weight: bold;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0);
+  background-color: #99ddff;
 }
 
 .nav-list [class^="icon-"] {

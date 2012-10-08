@@ -18,17 +18,19 @@
     <script src="js/bootstrap.min.js"></script>
 
     <div class="row">
+      <div class="span2 offset5">
+        Spotify
+      </div>
       <div class="boxout gradient">
-
-        <div class="span2 offsetSearch">
+        <div class="span3 offsetSearch">
           <input type="text" placeholder="Search">
         </div>
       </div>
     </div>
 
     <div class="container-fluid">
-      <div class="row-fluid">
-        <div class="span2 sidebarFont" style="background-color:#555555">
+      <div class="row">
+        <div class="span3 sidebarFont" style="background-color:#555555" data-spy="scroll">
 
           <ul class="nav nav-list">
             <li class="nav-header">MAIN</li>
@@ -78,17 +80,17 @@
             <li class="nav-header">Collection</li>
 
             <li><a href="#">
-              <i class="icon-user icon-white"></i>
+              <i class="icon-home icon-white"></i>
               Library
             </a></li>
 
             <li><a href="#">
-              <i class="icon-user icon-white"></i>
+              <i class="icon-file icon-white"></i>
               Local Files
             </a></li>
 
             <li><a href="#">
-              <i class="icon-user icon-white"></i>
+              <i class="icon-star icon-white"></i>
               Starred
             </a></li>
 
@@ -103,33 +105,38 @@
           </div>
         </div>
 
-        <div class="row offset075 sidebarFont">
-          <i class="icon-music icon-white"></i>
-          Playlist1
-        </div>
+        <ul class="nav nav-list">
 
-        <div class="row offset075 sidebarFont">
-          <i class="icon-music icon-white"></i>
-          Playlist2
-        </div>
+          <li><a href="#">
+            <i class="icon-music icon-white"></i>
+            Playlist1
+          </a></li>
 
-        <div class="row offset075 sidebarFont">
-          <i class="icon-music icon-white"></i>
-          Playlist3
-        </div>
+          <li><a href="#">
+            <i class="icon-music icon-white"></i>
+            Playlist1
+          </a></li>
+
+          <li><a href="#">
+            <i class="icon-music icon-white"></i>
+            Playlist1
+          </a></li>
+        </ul>
         
         <img src="img/Tegan And Sara, Where Does The Good Go.png" class="img-rounded">
 
         <div class="row">
-          <div class="boxout2 gradient2"> 
-            <div class="span3">
+          <div class ="span3 songFont">
+            Where Does The Good Go
+          </div>
+          <div class ="span3 artistFont">
             Tegan And Sara
+          </div>
+          <div class="boxout2 gradient2">
           </div>
         </div>
 
-
       </div>
-
       <div class="span4" style="background-color:#555555">
         <table class="table table-striped">
           <tbody>
@@ -182,6 +189,28 @@
           </table>
         </div>
       </div>
+
+        <div class="row">
+          <div class="span3">
+              <div class="btn-group">
+
+                <button class="btn-custom2 offset05">
+                  <i class="icon-fast-backward"></i>
+                </button>
+
+                <button class="btn-custom offset05">
+                  <i class="icon-play"></i>
+                </button>
+
+                <button class="btn-custom2 offset05">
+                  <i class="icon-fast-forward"></i>
+                </button>
+
+              </div>
+            </div>
+          <div class="boxout3 gradient3">
+          </div>
+        </div>
     </div>
   </body>
 </html>

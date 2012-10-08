@@ -267,6 +267,10 @@ a:hover {
   width: 220px;
 }
 
+.span25 {
+  width: 300px;
+}
+
 .span2 {
   width: 140px;
 }
@@ -323,9 +327,20 @@ a:hover {
   margin-left: 100px;
 }
 
-.offset05 {
-  margin-left: 8px;
+.offset075 {
+  margin-left: 10px;
   margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.offsetSearch {
+  margin-left: 60px;
+}
+
+.offset05 {
+  margin-left: 4px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .row-fluid {
@@ -349,8 +364,8 @@ a:hover {
   float: left;
   width: 100%;
   min-height: 30px;
-  margin-left: 2.127659574468085%;
-  *margin-left: 2.074468085106383%;
+  margin-left: 0;
+  *margin-left: 0;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
@@ -408,6 +423,11 @@ a:hover {
 .row-fluid .span3 {
   width: 23.404255319148934%;
   *width: 23.351063829787233%;
+}
+
+.row-fluid .span25 {
+  width: 14.404255319148934%;
+  *width: 14.351063829787233%;
 }
 
 .row-fluid .span2 {
@@ -569,7 +589,7 @@ a:hover {
 
 .container-fluid {
   padding-right: 20px;
-  padding-left: 20px;
+  padding-left: 0px;
   *zoom: 1;
 }
 
@@ -972,14 +992,14 @@ input[type="color"],
 .uneditable-input {
   display: inline-block;
   height: 20px;
-  padding: 4px 6px;
+  padding: 0px 6px;
   margin-bottom: 9px;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 20px;
   color: #555555;
-  -webkit-border-radius: 3px;
-     -moz-border-radius: 3px;
-          border-radius: 3px;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
 }
 
 input,
@@ -1278,6 +1298,12 @@ input.span3,
 textarea.span3,
 .uneditable-input.span3 {
   width: 206px;
+}
+
+input.span25,
+textarea.span25,
+.uneditable-input.span25 {
+  width: 150px;
 }
 
 input.span2,
@@ -1978,6 +2004,12 @@ table [class*=span],
 .table .span2 {
   float: none;
   width: 124px;
+  margin-left: 0;
+}
+
+.table .span25 {
+  float: none;
+  width: 150px;
   margin-left: 0;
 }
 
@@ -3812,7 +3844,7 @@ input[type="submit"].btn.btn-mini {
   padding: 3px 5px;
   font-size: 10px;
   line-height: 20px;
-  color: #AAAAAA;
+  color: #999999;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
   text-transform: uppercase;
 }
@@ -3823,7 +3855,7 @@ input[type="submit"].btn.btn-mini {
 
 .nav-list {
   padding-right:15px;
-  padding-left: 15px;
+  padding-left: 10px;
   margin-bottom: 0;
 }
 
@@ -3835,7 +3867,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .nav-list > li > a {
-  padding: 3px 15px;
+  padding: 0px 10px;
 }
 
 .nav-list > .active > a,

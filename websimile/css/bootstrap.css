@@ -278,12 +278,16 @@ a:hover {
   width: 140px;
 }
 
+.span15 {
+  width: 80px;
+}
+
 .span1 {
   width: 60px;
 }
 
 .span05 {
-  width: 40px;
+  width: 30px;
 }
 
 .offset12 {
@@ -370,6 +374,15 @@ a:hover {
 .offsetFbName {
   margin-left: 10px;
   margin-top: 5px;
+}
+
+.offsetDropdown {
+  margin-left: 10px;
+}
+
+.offsetDropdownText {
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 .row-fluid {

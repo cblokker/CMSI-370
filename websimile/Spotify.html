@@ -5,13 +5,12 @@
     <title>Spotify</title>
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
   </head>
 
   <body>
+
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/bootstrap.js"></script>
 
@@ -20,25 +19,111 @@
 
         <div class="row">
           <div class="span2 offset5">Spotify</div>
-          <div class="span3">
-          </div>
+<!--           <div class="span1 offset4">
+            <i class="icon-resize-full"></i>
+          </div> -->
         </div>
 
         <div class="row">
 
           <div class="span1">
             <div class="btn-group">
-              <button class="btnUser">
-                <i class="icon-left"></i>
+              <button class="btnTopBar">
+                <i class="icon-chevron-left"></i>
               </button>
             </div>
           </div>
 
-          <div class="span3 offsetSearch">
+          <div class="span1" style="margin-left: -25px">
+            <div class="btn-group">
+              <button class="btnTopBar">
+                <i class="icon-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="span2" style="margin-top: 5px">
             <input type="text" placeholder="Search">
           </div>
 
-          <div class="span1" style="margin-left: 450px">
+          <div class="span1 offset5">
+            <div class="btn-group">
+              <button class="btnUpgrade">
+                <i class="icon-chevron-right"></i>
+                Upgrade
+              </button>
+            </div>
+          </div>
+
+          <div class="span1" style="margin-left: 35px">
+
+            <div class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              
+            <div class="btn-group">
+              <button class="btnTopBar">
+                <i class="icon-chevron-right"></i>
+              </button>
+            </div>
+
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                <li><a tabindex="-1" href="#">Notifications</a></li>
+                <li class="divider"></li>
+                
+
+<!--figure out how to implement blue hover for below like <li><a tabindex="-1" href="#">Notifications</a></li> above -->
+
+              <div class="row">
+                <div class="span4">
+                  <div class="row">
+                    <div class="span1 offsetFbThumbnail">
+                      <img src="img/bob_saget.jpeg" class="img-rounded">
+                    </div>
+                    <div class="span2">
+                      <small style="color: gray">your friend <strong style="color: black">Ron Paul</strong> just joined Spotify.</small>
+                      <p style="font-size: 10px; color: gray">2 days ago </p>    
+                    </div>
+                  <div>
+                </div>
+              </div>
+              <li class="divider"></li>
+
+              <div class="row">
+                <div class="span4">
+                  <div class="row">
+                    <div class="span1 offsetFbThumbnail">
+                      <img src="img/bob_saget.jpeg" class="img-rounded">
+                    </div>
+                    <div class="span2">
+                      <small style="color: gray">your friend <strong style="color: black">Ron Paul</strong> just joined Spotify.</small>
+                      <p style="font-size: 10px; color: gray">2 days ago </p>    
+                    </div>
+                  <div>
+                </div>
+              </div>
+              <li class="divider"></li>
+
+              <div class="row">
+                <div class="span4">
+                  <div class="row">
+                    <div class="span1 offsetFbThumbnail">
+                      <img src="img/bob_saget.jpeg" class="img-rounded">
+                    </div>
+                    <div class="span2">
+                      <small style="color: gray">your friend <strong style="color: black">Ron Paul</strong> just joined Spotify.</small>
+                      <p style="font-size: 10px; color: gray">2 days ago </p>    
+                    </div>
+                  <div>
+                </div>
+              </div>
+              <li class="divider"></li>
+
+              </ul>
+            </div>
+          </div>
+
+          <div class="span1" style="margin-left: -20px">
             <div class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">
               
@@ -60,9 +145,6 @@
               </ul>
             </div>
           </div>
-
-
-
 
           <div class="span05" style="margin-left: 37px">
             <img src="img/userPic.png" class="img-poloroid">
@@ -277,63 +359,6 @@
             </div>
           </div>
         </div>
-
-
-       <!--    <div class="row">
-            <div class="span4" style="background-color:#555555">
-              <table class="table table-striped">
-                <tbody>
-
-                  <tr>  
-                    <td>4</td>  
-                    <td>Babel </td>  
-                    <td>by Mumford & Sons</td>  
-                  </tr>
-
-                  <tr class="muted">  
-                    <td>5</td>  
-                    <td>Too Close</td>  
-                    <td>by Alex Clare</td>  
-                  </tr>
-
-                  <tr>  
-                   <td>6</td>  
-                    <td>Rabindranath</td>  
-                    <td>Sen</td>  
-                  </tr>
-
-                </tbody>
-              </table>
-            </div>
-
-            <div class="row">
-              <div class="span4" style="background-color:#555555;">
-                <table class="table table-striped">
-                  <tbody>
-
-                    <tr>  
-                      <td>4</td>  
-                      <td>Babel </td>  
-                      <td>by Mumford & Sons</td>  
-                    </tr>
-
-                    <tr class="muted">  
-                      <td>5</td>  
-                      <td>Too Close</td>  
-                      <td>by Alex Clare</td>  
-                    </tr>
-
-                    <tr>  
-                      <td>6</td>  
-                      <td>Rabindranath</td>  
-                      <td>Sen</td>  
-                    </tr>
-
-                  </tbody>
-                </table>
-              </div>
-            </div> -->
-
 
 
         <div class="span2" style="background-color:#555555">

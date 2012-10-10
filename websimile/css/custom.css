@@ -37,6 +37,14 @@
   border-bottom: 1px solid #000;
 }
 
+.boxoutNotify {
+  border-width: 1px;
+  border-color: gray;
+  padding: 0px;
+  border-bottom: 1px solid #999;
+  background-color: rgba(0, 0, 0, 0);
+}
+
 
 .gradient {
   background-image: -moz-linear-gradient(top, #EEE, #999);

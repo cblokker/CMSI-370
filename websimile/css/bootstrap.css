@@ -3240,6 +3240,61 @@ button.close {
   -webkit-border-bottom-right-radius: 0px;
 }
 
+.btnTopBar {
+  display: inline-block;
+  *display: inline;
+  padding: 2px 10px;
+  margin-bottom: 0;
+  *margin-left: .3em;
+  font-size: 12px;
+  color: #111;
+  line-height: 25px;
+  *line-height: 20px;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: gba(255, 255, 255, 0);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ddd), to(#999));
+  background-image: -webkit-linear-gradient(top, #c9c9c9, #a6a6a6);
+  background-image: -o-linear-gradient(top, #ffffff, #aaaaaa);
+  background-image: linear-gradient(to bottom, #ffffff, #aaaaaa);
+  background-image: -moz-linear-gradient(top, #ffffff, #aaaaaa);
+  background-repeat: repeat-x;
+  border: 1px;
+  *border: 0;
+  -webkit-border-radius: 5px;
+}
+
+.btnUpgrade {
+  display: inline-block;
+  *display: inline;
+  padding: 0px 10px;
+  margin-top: 2px;
+  margin-bottom: 0;
+  *margin-left: .3em;
+  font-size: 13px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 25px;
+  *line-height: 20px;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+  vertical-align: middle;
+  cursor: pointer;
+
+  background-color: gba(255, 255, 255, 0);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ddd), to(#999));
+  background-image: -webkit-linear-gradient(top, #c8c8c8, #a7a7a7);
+  background-image: -o-linear-gradient(top, #ffffff, #aaaaaa);
+  background-image: linear-gradient(to bottom, #ffffff, #aaaaaa);
+  background-image: -moz-linear-gradient(top, #ffffff, #aaaaaa);
+  background-repeat: repeat-x;
+  border: 1px;
+  *border: 0;
+  -webkit-border-radius: 15px;
+}
+
 .btn:hover,
 .btn:active,
 .btn.active,
@@ -3308,6 +3363,37 @@ button.close {
   border-bottom-color: #666;
 }
 
+.btnTopBar:hover {
+  color: #222;
+  padding: 1px 9px;
+  text-decoration: none;
+  background-color: #363636;
+  *background-color: #898989;
+  /* Buttons in IE7 don't get borders, so darken on hover */
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#aaaaaa));
+  background-image: -webkit-linear-gradient(top, #ddd, #aaa);
+  background-image: -o-linear-gradient(top, #ffffff, #aaaaaa);
+  background-image: linear-gradient(to bottom, #ffffff, #aaaaaa);
+  background-image: -moz-linear-gradient(top, #ffffff, #aaaaaa);
+/*  background-repeat: repeat-x;*/
+  border: 1px solid #111;
+  *border: 0;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);
+  border-color: #888 #888 #888;
+  border-bottom-color: #666;
+}
+
+.btnUpgrade:hover {
+  background-color: #666;
+  background-color: #666 \9;
+  background-image: none;
+  color: #fff;
+  outline: 1;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
 
 .btn:focus {
   outline: thin dotted #333;
@@ -3357,6 +3443,30 @@ button.close {
   background-color: #444 \9;
   background-image: none;
   color: #ccc;
+  outline: 1;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.btnTopBar.active,
+.btnTopBar:active {
+  background-color: #444;
+  background-color: #444 \9;
+  background-image: none;
+  color: #ccc;
+  outline: 1;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.btnUpgrade.active,
+.btnUpgrade:active {
+  background-color: #444;
+  background-color: #444 \9;
+  background-image: none;
+  color: #fff;
   outline: 1;
   -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
      -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);

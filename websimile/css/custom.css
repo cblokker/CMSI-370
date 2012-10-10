@@ -9,8 +9,9 @@
 .boxout {
   border-width: 1px;
   border-color: gray;
-  padding: 28px;
+  padding: 10px;
   border-bottom: 1px solid #333;
+  border-right: 1px solid #333;
 }
 
 .boxout2 {
@@ -79,3 +80,7 @@
 	font-size: 14px;
   margin-left: 30px;
 }
+
+
+
+

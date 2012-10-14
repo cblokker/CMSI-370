@@ -3,13 +3,14 @@
   border-bottom: 1px solid #333;
   border-left: 1px solid #333;
   border-right: 1px solid #333;
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: 0px;
+  margin-right: -21px;
+  background-color: #494949;
 }
 .boxout {
   border-width: 1px;
   border-color: gray;
-  padding: 10px;
+  padding: 3px;
   border-bottom: 1px solid #333;
   border-right: 1px solid #333;
 }
@@ -26,6 +27,8 @@
   border-width: 1px;
   border-color: gray;
   padding: 20px;
+  margin-left: 5px;
+  margin-right: 115px;
   border-bottom: 1px solid #444444;
   border-top: 1px solid #444444;
 }
@@ -33,8 +36,10 @@
 .boxout4 {
   border-width: 1px;
   border-color: gray;
-  padding: 15px;
+  padding: 5px;
   border-bottom: 1px solid #000;
+  margin-right: -15px;
+  background-color: #292929;
 }
 
 .boxoutNotify {
@@ -67,8 +72,7 @@
 }
 
 .gradient5 {
-  background-image: -moz-linear-gradient(top, #666, #444);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #666), color-stop(1, #444));
+
 }
 
 

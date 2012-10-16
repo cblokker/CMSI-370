@@ -2,17 +2,18 @@
   text-align: center;
   border-width: 1px;
   border-color: gray;
-  padding: 3px;
   border-bottom: 1px solid #333;
   border-right: 1px solid #333;
+  background: #444;
 }
 
 .boxoutAlarms {
   color: #eee;
   text-align: center;
   border-width: 1px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   border-color: gray;
-  padding: 3px;
   border-bottom: 1px solid #bbb;
   border-right: 1px solid #333;
 
@@ -21,7 +22,6 @@
 .boxoutAlarmToggle {
   border-width: 1px;
   border-color: gray;
-  padding: 3px;
   border-bottom: 1px solid #bbb;
   border-right: 1px solid #333;
 }
@@ -29,14 +29,36 @@
 .boxoutDelete {
   text-align: center;
   color: #eee;
+  padding-top: 8px;
+  padding-bottom: 8px;
   border-width: 1px;
   border-color: gray;
-  padding: 3px;
   border-bottom: 1px solid #333;
   border-right: 1px solid #333;
-	
 }
 
+.boxoutRepeat {
+  text-align: left;
+  color: #000;
+  font-size: 12px;
+  border-width: 1px;
+  border-color: gray;
+  padding: 5px;
+  border-top: 1px solid #bbb;
+  border-bottom: 2px solid #999;
+  border-right: 1px solid #999;
+  border-left: 1px solid #fff;
+}
+
+.spanPhoneWidth {
+  width: 200px;
+  padding-left: 5px;
+}
+
+.spanRepeat {
+  width: 22px;
+  margin-left: 0px;
+}
 
 .gradientAlarms {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #aaa), color-stop(1, #222));
@@ -46,3 +68,19 @@
   background-image: -moz-linear-gradient(top, #aaa, #777);
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #aaa), color-stop(1, #777));
 }
+
+.gradientRepeat {
+  background-image: -moz-linear-gradient(top, #fff, #aaa);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #aaa));
+}
+
+.alarmRepeat {
+  font-size: 10px;
+}
+
+
+
+
+
+
+

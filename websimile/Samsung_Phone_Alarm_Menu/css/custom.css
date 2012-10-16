@@ -1,0 +1,48 @@
+.boxoutTop {
+  text-align: center;
+  border-width: 1px;
+  border-color: gray;
+  padding: 3px;
+  border-bottom: 1px solid #333;
+  border-right: 1px solid #333;
+}
+
+.boxoutAlarms {
+  color: #eee;
+  text-align: center;
+  border-width: 1px;
+  border-color: gray;
+  padding: 3px;
+  border-bottom: 1px solid #bbb;
+  border-right: 1px solid #333;
+
+}
+
+.boxoutAlarmToggle {
+  border-width: 1px;
+  border-color: gray;
+  padding: 3px;
+  border-bottom: 1px solid #bbb;
+  border-right: 1px solid #333;
+}
+
+.boxoutDelete {
+  text-align: center;
+  color: #eee;
+  border-width: 1px;
+  border-color: gray;
+  padding: 3px;
+  border-bottom: 1px solid #333;
+  border-right: 1px solid #333;
+	
+}
+
+
+.gradientAlarms {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #aaa), color-stop(1, #222));
+}
+
+.gradientDelete {
+  background-image: -moz-linear-gradient(top, #aaa, #777);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #aaa), color-stop(1, #777));
+}

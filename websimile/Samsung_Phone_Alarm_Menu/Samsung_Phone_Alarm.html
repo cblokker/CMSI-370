@@ -9,10 +9,6 @@
     <link href="css/custom.css" rel="stylesheet">
   </head>
   <body>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="js/bootstrap.js"></script>
-
-
     <div class="row">
       <div class="spanPhoneWidth boxoutTop">
         <div class="row">
@@ -20,6 +16,8 @@
             <i class="icon-signal icon-white"></i>
             <i class="icon-list-alt icon-white"></i>
           </div>
+          <!-- JD: Inline style attributes, although allowed, disrupt your MVC separation.
+                   For the best structure, put *all* CSS in your CSS file (you have one anyway). -->
           <div class"span1" style="color: yellow; margin-left: 150px">
             <img src="img/battery.png">
               2:04P
@@ -33,7 +31,8 @@
       </div>
     </div>
 
-
+    <!-- JD: Absolute file URLs are generally a no-no because they are of extremely limited
+             use.  This one, in particular, seems quite out of place actually. -->
     <a href="file:///Users/cblokker/CMSI-370/websimile/Samsung_Phone_Alarm_Menu/Samsung_Phone_Alarm_2.html">
     <div class="row">
       <div class="spanPhoneWidth boxoutAlarmToggle">
@@ -55,7 +54,7 @@
       </div>
     </div>
 
-    <a href="file:///Users/cblokker/CMSI-370/websimile/Samsung_Phone_Alarm_Menu/Samsung_Phone_Alarm_2.html">
+    <!-- JD: I deleted this one just to see the effect and it looks like all it did was change alarm colors. -->
     <div class="row">
       <div class="spanPhoneWidth boxoutAlarmToggle">
         <div class="row" >
@@ -76,7 +75,9 @@
       </div>
     </div>
 
-    <a href="file:///Users/cblokker/CMSI-370/websimile/Samsung_Phone_Alarm_Menu/Samsung_Phone_Alarm_2.html">
+    <!-- JD: This one I made relative, and finally I got it---you want the list items to go to your
+             other alarm page.  This is fine, but (a) keep href's relative, and (b) close the tags!. -->
+    <a href="Samsung_Phone_Alarm_2.html">
     <div class="row">
       <div class="spanPhoneWidth boxoutAlarmToggle">
         <div class="row" >
@@ -124,6 +125,9 @@
       </div>
     </div>
 
+    <!-- JD: For best performance, place script elements at the end. -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.js"></script>
 
   </body>
 </html>

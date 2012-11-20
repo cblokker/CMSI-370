@@ -324,16 +324,20 @@ var startSierpinski = function (canvas) {
 
     // Set up event handlers: we want a drag-to-rotate.
     cameraRotate = function (event) {
-        // Adjust position of triangle
-        viewerLocation.x = xPositionStart + (xReposition - event.clientX)/50;
-        viewerLocation.y = yPositionStart + (event.clientY - yReposition)/50;
+        // Adjust position of triangle if shift key is pressed while dragging
+        if (event.shiftKey == 1) {
+            viewerLocation.x = xPositionStart + (xReposition - event.clientX)/50;
+            viewerLocation.y = yPositionStart + (event.clientY - yReposition)/50;
 
-        // Zoom in and out of triangle
-        scaleFactor = yZoomStart + (yDragStart - event.clientY)/50;
+        // Zoom in and out of triangle if alt key is pressed while dragging   
+        } else if (event.altKey == 1) {
+            scaleFactor = yZoomStart + (yDragStart - event.clientY)/50;
 
-        // Rotate triange
-        rotationAroundX = xRotationStart + yDragStart - event.clientY;
-        rotationAroundY = yRotationStart + xDragStart - event.clientX;
+        // drag to rotate triange
+        } else {
+            rotationAroundX = xRotationStart + yDragStart - event.clientY;
+            rotationAroundY = yRotationStart + xDragStart - event.clientX;
+        }
         drawScene();
     };
 

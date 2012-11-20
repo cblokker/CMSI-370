@@ -333,7 +333,7 @@ var startSierpinski = function (canvas) {
         } else if (event.altKey == 1) {
             scaleFactor = yZoomStart + (yDragStart - event.clientY)/50;
 
-        // drag to rotate triange
+        // Drag to rotate triangle while no key is pressed
         } else {
             rotationAroundX = xRotationStart + yDragStart - event.clientY;
             rotationAroundY = yRotationStart + xDragStart - event.clientX;

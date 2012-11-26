@@ -325,12 +325,17 @@ var startSierpinski = function (canvas) {
     // Set up event handlers: we want a drag-to-rotate.
     cameraRotate = function (event) {
         // Adjust position of triangle if shift key is pressed while dragging
-        if (event.shiftKey == 1) {
-            viewerLocation.x = xPositionStart + (xReposition - event.clientX)/50;
+        // JD: "Triple =" preferred in JavaScript.
+        if (event.shiftKey === 1) {
+            // JD: "50" is a somewhat arbitrary-looking hardcode.  Ideally, you can
+            //     figure out what this number is best based on.  Plus, the spacing
+            //     should be a little looser, like in the first line.  Parentheses
+            //     also fully eliminate any ambiguity.
+            viewerLocation.x = xPositionStart + ((xReposition - event.clientX) / 50);
             viewerLocation.y = yPositionStart + (event.clientY - yReposition)/50;
 
         // Zoom in and out of triangle if alt key is pressed while dragging   
-        } else if (event.altKey == 1) {
+        } else if (event.altKey === 1) {
             scaleFactor = yZoomStart + (yDragStart - event.clientY)/50;
 
         // Drag to rotate triangle while no key is pressed
@@ -350,7 +355,7 @@ var startSierpinski = function (canvas) {
         yRotationStart = rotationAroundY;
         canvas.onmousemove = cameraRotate;
 
-        // Transient state variablea declaration for panning
+        // Transient state variable declaration for panning
         xReposition = event.clientX;
         yReposition = event.clientY;
         xPositionStart = viewerLocation.x;

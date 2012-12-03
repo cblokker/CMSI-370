@@ -4,13 +4,31 @@
 }​
 
 #imageFemale {
-    margin:100px 100px;
+    margin:0px 0px;
     position: absolute;
 }
 
 #imageMale {
     margin:0px 0px;
     position: absolute;
+}
+
+a {
+    background: #ccc;
+    cursor: pointer;
+    border-top: solid 2px #eaeaea;
+    border-left: solid 2px #eaeaea;
+    border-bottom: solid 2px #777;
+    border-right: solid 2px #777;
+    padding: 5px 5px;   	
+    }
+
+a.down {
+    background: #999;
+    border-top: solid 2px #777;
+    border-left: solid 2px #777;
+    border-bottom:solid 2px  #eaeaea;
+    border-right: solid 2px #eaeaea;
 }
 
 

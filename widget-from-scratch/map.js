@@ -10,8 +10,7 @@ var startGender = function () {
     var img = $('.image');
     var offset = img.offset();
     var mousedown = false;
-    // var img = $('.imageFemale');
-    // var offset1 = img.offset();
+
     $("#imageFemale").css("opacity", 0);
 
     $('.image').mousedown(function(e){
@@ -37,15 +36,24 @@ var startGender = function () {
         img.css('-o-transform', 'rotate(' + degree + 'deg)');
         img.css('-ms-transform', 'rotate(' + degree + 'deg)');
 
-        opacityMale = ((135 - degree)*0.008);      
+        opacityMale = ((135 - degree)*0.008);
+        opacityFemale = (degree*0.008);
+
         if (mouseX > imageCenterX) {
             $("#imageMale").css("opacity", opacityMale);
+            $("#imageFemale").css("opacity", opacityFemale);
         }
 
+        if ( (mouseX < (imageCenterX + 30)) && (mouseX > (imageCenterX - 30)) && (mouseY > (imageCenterY)) ) {
+            $('a#buttonFemale').addClass("down");
+        } else {
+            $('a#buttonFemale').removeClass("down");
+        }
 
-        opacityFemale = (degree*0.008);      
-        if (mouseX > imageCenterX) {
-            $("#imageFemale").css("opacity", opacityFemale);
+        if ( (mouseY < (imageCenterX + 80)) && (mouseX > (imageCenterX + 30)) && (mouseY < (imageCenterY - 30)) ) {
+            $('a#buttonMale').addClass("down");
+        } else {
+            $('a#buttonMale').removeClass("down");
         }
     });
 }

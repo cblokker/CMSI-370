@@ -4,24 +4,28 @@
     	<meta charset="UTF-8" />
         <title>Gender Selection</title>
         <link rel="stylesheet" type="text/css" href="map.css"/>
-        <!-- Load up jQuery first. -->
-        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-            <!-- Load up the controller code. -->
-        <script type="text/javascript" src="map.js" ></script>
+
         <script>
             window.onload = function () {
-        // All of the action is in the startSierpinski function.
                 startGender("image");
-      };
+            };
         </script>
     </head>
 
     <body>
+
+        <!-- Load up jQuery first. -->
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+        <!-- Load up the controller code. -->
+        <script type="text/javascript" src="map.js" ></script>
+
         <p>Select your Gender by rotating the gender symbol</p>
 
         <div id="image">
             <img src="img/maleGender.jpeg" class="image"/> <br>
         </div>
+
     </body>
 </html>
 

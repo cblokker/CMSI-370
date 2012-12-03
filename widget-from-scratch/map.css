@@ -1,19 +1,19 @@
-.image {
-  margin:50px 50px;
+#image {
+  margin:100px 100px;
   position: absolute;
 }​
 
-/*.image img{
-	position:absolute;
-    left:0;
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
-}*/
-
-
-.image:hover {
-  opacity: 0;
+#imageFemale {
+    margin:100px 100px;
+    position: absolute;
 }
+
+#imageMale {
+    margin:0px 0px;
+    position: absolute;
+}
+
+
+
+
 ​

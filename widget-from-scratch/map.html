@@ -20,17 +20,30 @@
         <!-- Load up the controller code. -->
         <script type="text/javascript" src="map.js" ></script>
 
-        <p>Select your Gender by rotating the gender symbol</p>
+        <div class="row offset1">
+            <div class="span6">
+                <div id="imageMale" class="image">
+                    <img src="img/maleGender3.png"><br>
+                </div>
+                <div id="imageFemale" class="image">
+                    <img src="img/femaleGender3.png"><br>
+                </div>
+                <div class="arrow">
+                    <img src="img/Arrow1.png" class="arrow"/><br>
+                </div>
+            </div>
+        </div>    
 
-        <div id="imageMale">
-            <img src="img/maleGender2.png" class="image"/><br>
-        </div>
-        <div id="imageFemale">
-            <img src="img/femaleGender2.png" class="image"/><br>
+        <div class="row offset1">
+            <div class="span6">
+                Choose your gender by sliding the gender symbol!
+                <a id="buttonMale" title="button">Male</a>
+                <a id="buttonFemale" title="button">Female</a>
+            </div>
         </div>
 
-        <a id="buttonFemale" title="button">Female</a>
-        <a id="buttonMale" title="button">Male</a>
+
+        
 
     </body>
 </html>

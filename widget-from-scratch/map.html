@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<!-- JD: Odd choice of filenames (map.*) for the gender widget.
+         Plus, your class names, particularly "image" also strike
+         me as somewhat generic and can benefit from better-matching
+         choices. -->
 <html>
     <head>
     	<meta charset="UTF-8" />
@@ -7,6 +11,8 @@
 
         <script>
             window.onload = function () {
+                // JD: You are sending an argument here, but your actual
+                //     startGender function does not use it.
                 startGender("image");
             };
         </script>

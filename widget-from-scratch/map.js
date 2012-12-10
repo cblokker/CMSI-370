@@ -1,5 +1,13 @@
+// JD: This function does a good job setting up a *specific* set of elements
+//     for use as a graphical male/female selector, but that specific set
+//     only (i.e., IDs are hardcoded [like #imageFemale]).  Further, a
+//     relatively complex element setup is needed in the HTML, even though
+//     such a male/female selector would look pretty much the same in any
+//     occurrence (meaning that most of the elements of this widdget can be
+//     created programmatically).  This is a good first step, but will need
+//     a round of modifications to make it truly componentized.
 var startGender = function () {
-    
+
     // Variables for rotation calculation
     var imageCenterX,
         imageCenterY,
@@ -13,11 +21,17 @@ var startGender = function () {
         
         // Boolean to indicate when the mouse is down
         // to indicate when the mouse is down AND moving to
-        // rotate dial.  Probably a better event driven way to do this. 
+        // rotate dial.  Probably a better event driven way to do this.
+
+        // JD: You can bind/unbind the event handler depending on the current
+        //     state of the widget.  That would be the "better event driven way"
+        //     that you posited above  :)  Also, you don't use moveMouse.
         mousedown = false,
         moveMouse = false,
 
         // Constants for male and female degree positons
+        // JD: To indicate their constant nature, the convention is to
+        //     give these variables all-cap names.
         femaleDegree = 135,
         maleDegree = 0,
         snapThreshold = 7;
@@ -139,10 +153,12 @@ var startGender = function () {
         $("#imageMale").css("opacity", opacityMale);
         $("#imageFemale").css("opacity", opacityFemale);
 
+        // JD: You can actually combine this into a single CSS object;
+        //     makes the code more compact and easier to read.
         img.css('-moz-transform', 'rotate(' + deg + 'deg)');
         img.css('-webkit-transform', 'rotate(' + deg + 'deg)');
         img.css('-o-transform', 'rotate(' + deg + 'deg)');
         img.css('-ms-transform', 'rotate(' + deg + 'deg)');  
-    }
+    } // JD: Semicolon needed.
 }
 

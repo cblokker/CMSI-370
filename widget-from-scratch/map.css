@@ -76,6 +76,19 @@ a.downMale {
 
 /*Spans, offsets, and rows done in simmilar fashion as bootstrap*/
 
+/* JD: It appears that you generally took the idea behind these classes
+       wholesale from Bootstrap.  Two issues though:
+       
+       - Why didn't you just load up Bootstrap?  As long as you did not
+         specifically use Bootstrap directly in your widget code, this
+         would have been OK.
+
+       - Do you *really* need these styles?  You certainly did not end
+         up using them all.  In this case, I think you are better off
+         not having them rather than potentially conflicting with the
+         ones that Bootstrap defines (in case a developer wants to use
+         *both* Bootstrap and your widget).
+*/
 .row {
   margin-left: -20px;
   *zoom: 1;

@@ -29,7 +29,7 @@
 %
 \title{Dream Interface for Headmaster}
 \author{Chase Blokker}
-\date{11/29/12}
+\date{12/12/12}
 
 %
 % The document proper.
@@ -40,16 +40,86 @@
 \maketitle
 
 
-\section{Introduction}
-\label{Introduction}
+\section{Concept}
+\label{Concept}
 
-The concept for my dream interface utilizes the accelerometer found in most smart phones.  The user controls a steel ball, and tilts the phone to move the ball in the desired direction.  Menus are represented as holes.  When the ball falls into one of these holes, the menu is selected, and the page is refreshed to the related selected menu.\\
+My headmaster dream interface is a smartphone app that utilizes the built in accelerometer.  The app will adopt the same menu structure as the current headmaster, but will be converted into a user-friendly version for a touch screen smartphone interface.   What will make this smartphone app unique will be the button at the top of the home page titled “Navigate the Headmaster Labyrinth”.  When the user presses this button, an alternative interface to navigate through headmaster will pop up.   This alternative interface will be a skeomorphic adaptation of the classic game called Labyrinth, as depicted in figure blank.  When the user tilts the phone, the ball will roll in the desired direction, simulating a ball rolling down an inclined plane due to gravitational force.  The user will select a menu by getting the ball into the appropriately titled hole.  When the ball falls into the hole and disappears, a noise that sounds like a steel ball hitting wood will indicate to the user that they have selected that menu item. The page will then be refreshed to the selected menu item.  The user will be able to seamlessly switch back to the traditional interface at any point, meaning that they will stay on the same page, and entered data that wasn’t saved will still be there.  This ability to switch interfaces is similar to Windows 8, and its ability to toggle between the new tiles interface and the more classic windows desktop experience.
 
-When the user starts the mobile app, the ball is positioned in the center of the screen.   The user has the option of tilting the phone in four directions to move the ball towards submenu items within students, grants, events, or reports.  When the ball goes through one of these menu “channels”, the user has selected the first level of the menu.  The ball then enters a new chamber that has the submenu items.  For example, if the user rolls the ball towards the direction of Students, the user can now select a student based off of grade by following either the freshmen, sophomore, junior, or senior channel.  Within these channels are individual students.  The user selects a student by getting the ball into the student’s hole.  The page is then refreshed to a more traditional headmaster interface, displaying all the information.\\
 
-The design will be skeuomorphic in the sense that it will imitate a traditional ball tilt maze.  This maze was traditionally called labyrinth, and can be seen pictured below.  The object of the game is to get a steel ball from one side of the maze to the other side of the maze by avoiding all the holes.  The user moves the ball by adjusting the angle of the board.  Two nobs found on the side can move the x-axis and y-axis of the board.  Adjusting these nobs thereby move the ball.  In the phone interface, instead of using two nobs, the user can adjust the x-axis and y-axis of the phone directly to update the position of the ball.\\
+\section{Reason for Creating Two Interface Styles}
+\label{Reason for Creating Two Interface Styles}
 
-This interface is prone to user error because it may be easy to accidentally get the ball in the wrong hole.
+The original idea for this dream interface was to create a novel user interface that has never been thought of before.  The Labyrinth idea is very creative, yet it only caters to the usability metric of satisfaction.  Since Headmaster is an interface that people will use on a daily basis, it is impractical for them to have to navigate through the labyrinth every time they log onto Headmaster and want to update or find student information.  This would quickly become annoying, likely resulting in the user throwing their phone across the room.  Therefore, by having a secondary interface that caters to efficiency and error (where the labyrinth interface is the weakest), the user can simply bypass the labyrinth user interface option.  When the user feels compelled to be amazed at rolling a ball across the screen to select menu items, they have the option to do so.
+
+\section{The "Classic" Interface}
+\label{The "Classic" Interface}
+
+\subsection{iOS Developer Library Guidelines}
+
+As stated above, the classic interface will be the interface that caters to efficiency and low rate of user error.  This interface will follow several guidelines pertaining to iOS applications.  Below is a selected list found in the iOS Developer Library:\\
+
+\begin{itemize}
+\item  Controls should look tappable
+
+The buttons should include contours and gradients, and be distinguishable from things that aren’t buttons.  When a button is selected, it will turn blue and stay blue, as the buttons have the ability to toggle between menu items.\\
+
+\item App structure should be clean and easy to navigate
+
+The application will be as minimalistic as possible by choose subtle grey colors and avoiding too many options.\\
+
+\item Design for touch
+
+This means that you can’t simply replicate the web Headmaster interface for an iOS application.  Event driven programming for both platforms is different, as there are different events that occur.  For example, in a touch screen interface, multiple fingers can touch the screen at once and independently manipulate items.  This can’t happen with a mouse, as there is only one mouse cursor.  Likewise, with a mouse interface, the user can hover over an object, which can call an event like animation.  A user cannot hover their finger over a traditional touchscreen.  Therefore, a hover event doesn’t exist for touchscreens.\\
+
+\item Let people scroll
+
+According to the iOS developer library, scrolling is an easy and expected user experience.  Trying to squeeze everything within the dimensions of the phone may result in small and hard to read font size.  Therefore, scrolling both vertically and horizontally will be used in the headmaster smartphone application.\\
+\end{itemize}
+
+Now that you have a general overview of the guidelines I will try to follow, lets get into the nuts and bolts of the classic interface.  
+
+
+\subsection{Login Screen}
+
+When the app is first opened, the user will be prompted with a login screen similar to the current web-app implementation of headmaster.  This should be clean, with just two fields, username and password.  Above those two fields will be a welcome text, and below will be a login button.
+
+\subsection{Homescreen}
+
+The homescreen is depicted below in Figure balh.  At the top there is a menu bar for general search and logout functionality (see section bleh for search implementation).  This menu bar will always appear at the top of the screen, no matter what page the user is viewing, or if the user is scrolling up and down.  This will allow for higher efficiency when the user wants to find something, yet they are scrolled half way down the page.  Therefore, they would not have to scroll back up to the top.  Below the menu bar is a large button that says “Navigate the Headmaster Labyrinth”.  When the user presses this button, they will be directed to the alternative Labyrinth user interface.  This button only appears on the homescreen.  It will animate to the left and off the screen when navigating away from the homescreen.  Similarly to how the iPhone notification menu can be swiped down from above, the Labyrinth button can be swiped from the right, and then pressed (this may interfere with swiping left and right for other menus).\\
+
+In the middle of the homescreen is a dialog that welcomes the user to Headmaster and gives them basic instructions on where to begin.\\
+
+At the bottom on the homescreen is the menu bar for toggling between students, events, grants, and reports.  Like the search and logout menu par at the top, this menu will always exist.\\
+
+
+\subsection{Sub-menu Example (Students)}
+
+When the user clicks on the student page, there are four buttons at the top that read create, freshman, sophomore, junior, and senior.  If the user taps on one of these buttons, it will bring them to the corresponding list.  The user can then scroll up and down the screen to look through the list of students.  The search bar at top will remain at the top even when the user scrolls down.   Also, the top bar should also include different ways of categorizing students (alphabetically, major, college, …).  This will help the user visualize students categorically.\\
+
+The user can navigate student year by swiping left and right through their year (like you can do on the iPhone homescreen).  When the user swipes through the years, the scrollbar button menu at the bottom that indicates which year you are viewing should update accordingly.
+
+
+\subsection{Change to Search}
+
+Instead of having separate search options in the dropdown menus like the current headmaster, I would create a general search bar always found at the top of the screen, as depicted in Figure .  The user can type whatever they desire, and the matching items will drop down in a fashion akin to Google search.  Although, there should be a search filter option, where the user can select between students, events, grants, or reports.  This will help the user filter out any unwanted search results.  Also, when the user is on one of the submenu pages like students, the default search filter criterion should be students.  It is expected that the user will want to search for students when they are scrolling through the list of students.
+
+
+\section{The "Labyrinth" Interface}
+
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=90mm]{classic-homepage.jpg}
+\caption{Example "Classic" Headmaster Interface Homescreen}
+\label{overflow}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=90mm]{classic-students.jpg}
+\caption{Example "Classic" Headmaster Interface Student Page}
+\label{overflow}
+\end{figure}
 
 \begin{figure}[ht!]
 \centering
@@ -58,14 +128,10 @@ This interface is prone to user error because it may be easy to accidentally get
 \label{overflow}
 \end{figure}
 
-\pagebreak
-\
-
-
 \begin{figure}[ht!]
 \centering
-\includegraphics[width=140mm]{example.png}
-\caption{The example interface}
+\includegraphics[width=140mm]{labyrinth-start.jpg}
+\caption{Example "Labyrinth" iPhone Headmaster Interface}
 \label{overflow}
 \end{figure}
 

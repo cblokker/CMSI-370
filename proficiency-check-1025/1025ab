@@ -1,0 +1,29 @@
+1025a (1a, 1b, 1d)
+
+1.  What, typically is the strongest usability metric of the menus/forms/dialogue 
+    interaction style?
+
+    Learnability
+
+
+2.  What is the cognitive rationale behind why the menus/forms/dialogs
+    interaction style tends to excel at the above usability metric?
+
+    Well developed menus/forms/dialogs are intuitive, requiring the user to have very little experience with the interface to effectively use it.  Also, since the interface is intuitive and easy to learn, theres is low recall time even with infrequent use.  The user can also easily recognize these menus/forms/dialogs.
+
+
+1025b (1b, 1d)
+
+1.  What, typically, is the weakest usability metric of the menus/forms/dialogs
+    interaction style, and why?
+
+    
+    Satisfaction.  Generally, menus/forms/dialogs primarily need to get the job done (not prone to errors, intuitive so little learning is required,...)  Leter, the user can focus on satisfaction.
+
+2.  Name a feature that can be included in a menus/forms/dialogs user interface
+    that addresses this metric?
+
+    Animate a sub-menu falling down when you click on a button within the menus and choose clean colors for those menu items.
+
+    
+

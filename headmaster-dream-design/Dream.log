@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  12 DEC 2012 23:19
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  14 DEC 2012 11:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -217,9 +217,6 @@ LaTeX Warning: Label `overflow' multiply defined.
 
 LaTeX Warning: Label `overflow' multiply defined.
 
-
-LaTeX Warning: Label `overflow' multiply defined.
-
 )
 \openout1 = `Dream.aux'.
 
@@ -317,6 +314,12 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
 
 Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
@@ -352,6 +355,9 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
 
 Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
@@ -362,49 +368,77 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--91
 
  []
 
+<classic-homepage.jpg, id=14, 642.4pt x 1140.26pt>
+File: classic-homepage.jpg Graphic file (type jpg)
+ <use classic-homepage.jpg>
+Package pdftex.def Info: classic-homepage.jpg used on input line 96.
+(pdftex.def)             Requested size: 256.0748pt x 454.54741pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--93
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
+
+ []
+
+[3] [4 <./classic-homepage.jpg>]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
 
  []
 
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
-Missing character: There is no ¶ in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
-
- []
-
-<classic-homepage.jpg, id=14, 642.4pt x 1140.26pt>
-File: classic-homepage.jpg Graphic file (type jpg)
- <use classic-homepage.jpg>
-Package pdftex.def Info: classic-homepage.jpg used on input line 112.
-(pdftex.def)             Requested size: 256.0748pt x 454.54741pt.
-
-[3] <classic-students.jpg, id=18, 642.4pt x 1140.26pt>
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+<classic-students.jpg, id=21, 642.4pt x 1140.26pt>
 File: classic-students.jpg Graphic file (type jpg)
-
-<use classic-students.jpg>
-Package pdftex.def Info: classic-students.jpg used on input line 119.
+ <use classic-students.jpg>
+Package pdftex.def Info: classic-students.jpg used on input line 131.
 (pdftex.def)             Requested size: 256.0748pt x 454.54741pt.
- <labyrinth.jpeg, id=19, 602.25pt x 451.6875pt>
+
+<labyrinth.jpeg, id=22, 602.25pt x 451.6875pt>
 File: labyrinth.jpeg Graphic file (type jpg)
-
-<use labyrinth.jpeg>
-Package pdftex.def Info: labyrinth.jpeg used on input line 126.
+ <use labyrinth.jpeg>
+Package pdftex.def Info: labyrinth.jpeg used on input line 138.
 (pdftex.def)             Requested size: 256.0748pt x 192.06458pt.
- <labyrinth-start.jpg, id=20, 2055.68pt x 3083.52pt>
-File: labyrinth-start.jpg Graphic file (type jpg)
 
-<use labyrinth-start.jpg>
-Package pdftex.def Info: labyrinth-start.jpg used on input line 133.
+<labyrinth-start.jpg, id=23, 2055.68pt x 3083.52pt>
+File: labyrinth-start.jpg Graphic file (type jpg)
+ <use labyrinth-start.jpg>
+Package pdftex.def Info: labyrinth-start.jpg used on input line 145.
 (pdftex.def)             Requested size: 398.33858pt x 597.49641pt.
 
 
-LaTeX Warning: Float too large for page by 64.9643pt on input line 136.
+LaTeX Warning: Float too large for page by 64.9643pt on input line 148.
 
-[4 <./classic-homepage.jpg>] [5 <./classic-students.jpg>] [6 <./labyrinth.jpeg>
-] [7 <./labyrinth-start.jpg>] (./Dream.aux)
+[5] [6 <./classic-students.jpg>] [7 <./labyrinth.jpeg>] [8 <./labyrinth-start.j
+pg>] (./Dream.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -412,20 +446,20 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  2365 strings out of 493488
  34253 string characters out of 3141326
- 101628 words of memory out of 3000000
+ 102628 words of memory out of 3000000
  5653 multiletter control sequences out of 15000+200000
  7587 words of font info for 27 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 42i,6n,23p,1468b,220s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,6n,23p,1613b,220s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
 /usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
 sr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
 /local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Dream.pdf (7 pages, 3785406 bytes).
+Output written on Dream.pdf (8 pages, 3789109 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
- 33 compressed objects within 1 object stream
+ 55 PDF objects out of 1000 (max. 8388607)
+ 35 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
